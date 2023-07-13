@@ -1,0 +1,23 @@
+/* ********************************************
+# my additional resets
+******************************************** */
+
+
+/* make sure padding applied to elements is added within their calculated dimensions */
+*,
+*:after,
+*:before {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* make sure images behave fluidly */
+img {
+  object-fit: cover;
+  width: auto;
+  max-width: 100%;
+  height: auto !important;
+}
