@@ -5,3 +5,11 @@
 @use 'base/resets';
 
 @use 'abstracts/variables';
+
+main {
+	width: 100vw;
+}
+
+.container {
+	width: 20.437rem;
+}
