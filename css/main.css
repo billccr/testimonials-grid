@@ -98,18 +98,45 @@ img {
   height: auto !important;
 }
 
-/* ********************************************
-# variables
-******************************************** */
 /* ==========================================================================
 	 Author's custom styles
    ========================================================================== */
+body {
+  background-color: hsl(210, 46%, 95%);
+}
+
 main {
   width: 100vw;
 }
 
 .container {
+  width: 23.4rem;
+  margin: 0 auto;
+  border: 1px solid blue;
+  padding-top: 4.4rem;
+}
+
+.card {
   width: 20.437rem;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 0.7rem;
+  color: hsl(217, 19%, 35%);
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid green;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 /* ==========================================================================

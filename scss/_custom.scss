@@ -3,13 +3,43 @@
    ========================================================================== */
 
 @use 'base/resets';
+@use 'abstracts/variables' as v;
 
-@use 'abstracts/variables';
+body {
+	background-color: v.$light-gray-blue;
+}
 
 main {
 	width: 100vw;
 }
 
 .container {
-	width: 20.437rem;
+	width: 23.4rem;
+	margin: 0 auto;
+	border: 1px solid blue;			// ___________temp
+	padding-top: 4.4rem;
 }
+
+.card {
+	width: 20.437rem;
+	margin: 0 auto;
+	padding: 2rem;
+	border-radius: 0.7rem;
+	color: v.$dark-gray-blue;
+	background-color: v.$white;
+	border: 1px solid green;		// ___________temp
+}
+
+header {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+}
+
+// footer
+.attribution {
+	font-size: 11px; text-align: center;
+
+	a  {
+		color: hsl(228, 45%, 44%);
+		}
+	}
