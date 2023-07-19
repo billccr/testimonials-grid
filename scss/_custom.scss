@@ -16,24 +16,54 @@ main {
 .container {
 	width: 23.4rem;
 	margin: 0 auto;
-	border: 1px solid blue;			// ___________temp
+//	border: 1px solid blue;			// ___________temp
 	padding-top: 4.4rem;
 }
 
 .card {
 	width: 20.437rem;
 	margin: 0 auto;
-	padding: 2rem;
+	padding: 2.05rem;
 	border-radius: 0.7rem;
 	color: v.$dark-gray-blue;
 	background-color: v.$white;
-	border: 1px solid green;		// ___________temp
+
+	p {
+		font-size: 1.25rem;
+		font-weight: 600;
+		margin-bottom: 1rem;
+		line-height: 1.2;
+	}
+	blockquote {
+		font-size: 0.8rem;
+		line-height: 1.4;
+	}
 }
 
 header {
 	display: grid;
 	grid-template-columns: 1fr 5fr;
+	margin-bottom: 1rem;
+	div {
+		margin-left: 1rem;
+	}
+	h2 {
+		font-size: 0.9rem;
+		font-weight: 600;
+	}
+	h3 {
+		font-size: 0.8rem;
+	}
+	img {
+		height: 2rem !important;
+		width: auto;
+		border-radius: 50%;
+		border: solid 2px violet;		// _________ temp color
+		display: border-box;
+	}
 }
+
+
 
 // footer
 .attribution {
