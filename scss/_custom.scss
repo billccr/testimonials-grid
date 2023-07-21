@@ -22,21 +22,53 @@ main {
 
 .card {
 	width: 20.437rem;
-	margin: 0 auto;
-	padding: 2.05rem;
+	margin: 0 auto 1.6rem;
+	padding: 1.5rem 2.05rem 2rem;
 	border-radius: 0.7rem;
 	color: v.$dark-gray-blue;
 	background-color: v.$white;
-
+	h2 {
+		color: v.$white-70;
+	}
+	h3 {
+		color: v.$white-50;
+	}
 	p {
 		font-size: 1.25rem;
 		font-weight: 600;
 		margin-bottom: 1rem;
 		line-height: 1.2;
+		color: v.$white-80;
 	}
 	blockquote {
 		font-size: 0.8rem;
 		line-height: 1.4;
+		max-width: 15.35rem;
+		color: v.$white-50;
+	}
+}
+
+.violet {
+	background-color: v.$violet;
+}
+.gray-blue {
+	background-color: v.$dark-gray-blue;
+}
+.dark-blue {
+	background-color: v.$dark-blue;
+}
+.white {
+	h2 {
+		color: v.$dark-blue-70;
+	}
+	h3 {
+		color: v.$dark-blue-40;
+	}
+	p {
+		color: v.$dark-blue-80;
+	}
+	blockquote {
+		color: v.$dark-blue-40;
 	}
 }
 
@@ -44,8 +76,15 @@ header {
 	display: grid;
 	grid-template-columns: 1fr 5fr;
 	margin-bottom: 1rem;
+	img {
+		height: 2rem !important;
+		width: auto;
+		border-radius: 50%;
+		border: solid 2px violet;		// _________ temp color
+		display: border-box;
+	}
 	div {
-		margin-left: 1rem;
+		margin-left: 0.5rem;
 	}
 	h2 {
 		font-size: 0.9rem;
@@ -53,13 +92,6 @@ header {
 	}
 	h3 {
 		font-size: 0.8rem;
-	}
-	img {
-		height: 2rem !important;
-		width: auto;
-		border-radius: 50%;
-		border: solid 2px violet;		// _________ temp color
-		display: border-box;
 	}
 }
 

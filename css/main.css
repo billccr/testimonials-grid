@@ -117,21 +117,55 @@ main {
 
 .card {
   width: 20.437rem;
-  margin: 0 auto;
-  padding: 2.05rem;
+  margin: 0 auto 1.6rem;
+  padding: 1.5rem 2.05rem 2rem;
   border-radius: 0.7rem;
   color: hsl(217, 19%, 35%);
   background-color: hsl(0, 0%, 100%);
+}
+.card h2 {
+  color: hsla(0, 0%, 100%, 0.7);
+}
+.card h3 {
+  color: hsla(0, 0%, 100%, 0.5);
 }
 .card p {
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 1rem;
   line-height: 1.2;
+  color: hsla(0, 0%, 100%, 0.8);
 }
 .card blockquote {
   font-size: 0.8rem;
   line-height: 1.4;
+  max-width: 15.35rem;
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
+.violet {
+  background-color: hsl(263, 55%, 52%);
+}
+
+.gray-blue {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.dark-blue {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.white h2 {
+  color: hsla(219, 29%, 14%, 0.7);
+}
+.white h3 {
+  color: hsla(219, 29%, 14%, 0.4);
+}
+.white p {
+  color: hsla(219, 29%, 14%, 0.8);
+}
+.white blockquote {
+  color: hsla(219, 29%, 14%, 0.4);
 }
 
 header {
@@ -139,8 +173,15 @@ header {
   grid-template-columns: 1fr 5fr;
   margin-bottom: 1rem;
 }
+header img {
+  height: 2rem !important;
+  width: auto;
+  border-radius: 50%;
+  border: solid 2px violet;
+  display: border-box;
+}
 header div {
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 header h2 {
   font-size: 0.9rem;
@@ -148,13 +189,6 @@ header h2 {
 }
 header h3 {
   font-size: 0.8rem;
-}
-header img {
-  height: 2rem !important;
-  width: auto;
-  border-radius: 50%;
-  border: solid 2px violet;
-  display: border-box;
 }
 
 .attribution {
