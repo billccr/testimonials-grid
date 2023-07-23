@@ -116,6 +116,9 @@ main {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 20.437rem;
   margin: 0 auto 1.6rem;
   padding: 1.5rem 2.05rem 2rem;
@@ -137,14 +140,15 @@ main {
   color: hsla(0, 0%, 100%, 0.8);
 }
 .card blockquote {
+  flex: 1 1 auto;
   font-size: 0.8rem;
   line-height: 1.4;
-  max-width: 15.35rem;
+  width: 15.35rem;
   color: hsla(0, 0%, 100%, 0.5);
 }
 
 .violet {
-  background-color: hsl(263, 55%, 52%);
+  background: no-repeat url("../img/bg-pattern-quotation.svg") hsl(263, 55%, 52%) 90% 0%;
 }
 
 .gray-blue {
@@ -177,18 +181,17 @@ header img {
   height: 2rem !important;
   width: auto;
   border-radius: 50%;
-  border: solid 2px violet;
-  display: border-box;
+  border: solid 2px hsla(0, 0%, 100%, 0.4);
 }
 header div {
-  margin-left: 0.5rem;
+  margin-left: 0.3rem;
 }
 header h2 {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 header h3 {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .attribution {
@@ -279,8 +282,39 @@ header h3 {
    Media Queries for Responsive Design.
    These override the primary ('mobile first') styles.
    ========================================================================== */
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 55em) {
   /* Style adjustments for viewports that meet the condition */
+  .container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "a a b c" "d e e c";
+    width: 69.5rem;
+  }
+  .card {
+    width: auto;
+    margin: 0;
+    justify-content: center;
+  }
+  .card blockquote {
+    width: auto;
+  }
+  .violet {
+    grid-area: a;
+  }
+  .gray-blue {
+    grid-area: b;
+  }
+  .long {
+    grid-area: c;
+  }
+  .short {
+    grid-area: d;
+  }
+  .dark-blue {
+    grid-area: e;
+  }
 }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */

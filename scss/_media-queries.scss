@@ -3,8 +3,48 @@
    These override the primary ('mobile first') styles.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@use 'base/resets';
+
+@media only screen and (min-width: 55em) {
 	/* Style adjustments for viewports that meet the condition */
+	.container {
+		display: grid;
+		gap: 1.5rem;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-areas:
+			"a a b c"
+			"d e e c";
+		width: 69.5rem;
+	}
+
+	.card {
+		width: auto;
+//		height: auto;
+		margin: 0;
+		justify-content: center;
+
+		blockquote {
+			width: auto;
+		}
+	}
+
+	.violet {
+		grid-area: a;
+	}
+	.gray-blue {
+		grid-area: b;
+	}
+	.long {
+		grid-area: c;
+	}
+	.short {
+		grid-area: d;
+	}
+	.dark-blue {
+		grid-area: e;
+	}
+
 }
 
 @media print,

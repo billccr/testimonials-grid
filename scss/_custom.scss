@@ -16,11 +16,13 @@ main {
 .container {
 	width: 23.4rem;
 	margin: 0 auto;
-//	border: 1px solid blue;			// ___________temp
 	padding-top: 4.4rem;
 }
 
 .card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	width: 20.437rem;
 	margin: 0 auto 1.6rem;
 	padding: 1.5rem 2.05rem 2rem;
@@ -41,15 +43,16 @@ main {
 		color: v.$white-80;
 	}
 	blockquote {
+		flex: 1 1 auto;
 		font-size: 0.8rem;
 		line-height: 1.4;
-		max-width: 15.35rem;
+		width: 15.35rem;
 		color: v.$white-50;
 	}
 }
 
 .violet {
-	background-color: v.$violet;
+	background: no-repeat url("../img/bg-pattern-quotation.svg")  v.$violet 90% 0%;
 }
 .gray-blue {
 	background-color: v.$dark-gray-blue;
@@ -80,18 +83,17 @@ header {
 		height: 2rem !important;
 		width: auto;
 		border-radius: 50%;
-		border: solid 2px violet;		// _________ temp color
-		display: border-box;
+		border: solid 2px v.$white-40;
 	}
 	div {
-		margin-left: 0.5rem;
+		margin-left: 0.3rem;
 	}
 	h2 {
-		font-size: 0.9rem;
+		font-size: 0.8rem;
 		font-weight: 600;
 	}
 	h3 {
-		font-size: 0.8rem;
+		font-size: 0.7rem;
 	}
 }
 
