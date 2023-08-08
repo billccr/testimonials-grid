@@ -20,12 +20,13 @@
 
 	.card {
 		width: auto;
-//		height: auto;
-		margin: 0;
-		justify-content: center;
+		margin: 0 0;
+//		padding-top: 0;
 
 		blockquote {
+			flex: 0 1 auto;
 			width: auto;
+			align-self: center;
 		}
 	}
 

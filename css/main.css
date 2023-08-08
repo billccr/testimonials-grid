@@ -110,6 +110,8 @@ main {
 }
 
 .container {
+  display: grid;
+  gap: 1.5rem;
   width: 23.4rem;
   margin: 0 auto;
   padding-top: 4.4rem;
@@ -118,10 +120,10 @@ main {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   width: 20.437rem;
-  margin: 0 auto 1.6rem;
-  padding: 1.5rem 2.05rem 2rem;
+  margin: 0 auto;
+  padding: 1.5rem 2rem 2rem;
   border-radius: 0.7rem;
   color: hsl(217, 19%, 35%);
   background-color: hsl(0, 0%, 100%);
@@ -138,12 +140,13 @@ main {
   margin-bottom: 1rem;
   line-height: 1.2;
   color: hsla(0, 0%, 100%, 0.8);
+  width: auto;
 }
 .card blockquote {
   flex: 1 1 auto;
   font-size: 0.8rem;
   line-height: 1.4;
-  width: 15.35rem;
+  width: 16rem;
   color: hsla(0, 0%, 100%, 0.5);
 }
 
@@ -195,6 +198,7 @@ header h3 {
 }
 
 .attribution {
+  margin-top: 2rem;
   font-size: 11px;
   text-align: center;
 }
@@ -294,11 +298,12 @@ header h3 {
   }
   .card {
     width: auto;
-    margin: 0;
-    justify-content: center;
+    margin: 0 0;
   }
   .card blockquote {
+    flex: 0 1 auto;
     width: auto;
+    align-self: center;
   }
   .violet {
     grid-area: a;
