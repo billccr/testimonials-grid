@@ -111,7 +111,7 @@ main {
 
 .container {
   display: grid;
-  gap: 1.5rem;
+  gap: 1.7rem;
   width: 23.4rem;
   margin: 0 auto;
   padding-top: 4.4rem;
@@ -120,11 +120,12 @@ main {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-content: space-between;
   width: 20.5rem;
+  height: fit-content;
   margin: 0 auto;
-  padding: 1.5rem 2.09rem 2rem;
-  border-radius: 0.7rem;
+  padding: 1rem 2.09rem 2rem;
+  border-radius: 0.6rem;
   color: hsl(217, 19%, 35%);
   background-color: hsl(0, 0%, 100%);
 }
@@ -152,6 +153,7 @@ main {
 
 .violet {
   background: no-repeat url("../img/bg-pattern-quotation.svg") hsl(263, 55%, 52%) 90% 0%;
+  background-position-x: right 5rem;
 }
 
 .gray-blue {
@@ -176,18 +178,20 @@ main {
 }
 
 header {
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-  margin-bottom: 1rem;
+  height: 3rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
 }
 header img {
   height: 2rem !important;
   width: auto;
+  margin: 0 0 1rem;
   border-radius: 50%;
   border: solid 2px hsla(0, 0%, 100%, 0.4);
 }
 header div {
-  margin-left: 0.3rem;
+  display: inline-block;
+  margin-left: 0.8rem;
 }
 header h2 {
   font-size: 0.8rem;
@@ -290,7 +294,8 @@ header h3 {
   /* Style adjustments for viewports that meet the condition */
   .container {
     display: grid;
-    gap: 1.5rem;
+    column-gap: 1.8rem;
+    row-gap: 1.5rem;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "a a b c" "d e e c";

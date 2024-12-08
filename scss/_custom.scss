@@ -15,7 +15,7 @@ main {
 
 .container {
 	display: grid;
-	gap: 1.5rem;
+	gap: 1.7rem;
 	width: 23.4rem;
 	margin: 0 auto;
 	padding-top: 4.4rem;
@@ -24,11 +24,12 @@ main {
 .card {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+ 	align-content: space-between;
 	width: 20.5rem;
+	height: fit-content;
 	margin: 0 auto;
-	padding: 1.5rem 2.09rem 2rem;
-	border-radius: 0.7rem;
+	padding: 1rem 2.09rem 2rem;
+	border-radius: 0.6rem;
 	color: v.$dark-gray-blue;
 	background-color: v.$white;
 	h2 {
@@ -56,6 +57,7 @@ main {
 
 .violet {
 	background: no-repeat url("../img/bg-pattern-quotation.svg")  v.$violet 90% 0%;
+	background-position-x: right 5rem;
 }
 .gray-blue {
 	background-color: v.$dark-gray-blue;
@@ -79,17 +81,21 @@ main {
 }
 
 header {
-	display: grid;
-	grid-template-columns: 1fr 5fr;
-	margin-bottom: 1rem;
+//	display: grid;
+//	grid-template-columns: 1fr 5fr;
+	height: 3rem;
+	margin-bottom: 0.5rem;
+	padding: .5rem 0;
 	img {
 		height: 2rem !important;
 		width: auto;
+		margin: 0 0 1rem;
 		border-radius: 50%;
 		border: solid 2px v.$white-40;
 	}
 	div {
-		margin-left: 0.3rem;
+		display: inline-block;
+		margin-left: 0.8rem;
 	}
 	h2 {
 		font-size: 0.8rem;
