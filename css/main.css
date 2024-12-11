@@ -111,7 +111,7 @@ main {
 
 .container {
   display: grid;
-  gap: 1.7rem;
+  gap: 1.5rem;
   width: 23.4rem;
   margin: 0 auto;
   padding-top: 4.4rem;
@@ -154,7 +154,6 @@ main {
 
 .violet {
   background: no-repeat url("../img/bg-pattern-quotation.svg") hsl(263, 55%, 52%) 90% 0%;
-  background-position-x: right 5rem;
 }
 
 .gray-blue {
@@ -289,7 +288,8 @@ header h3 {
 
 /* ==========================================================================
    Media Queries for Responsive Design.
-   These override the primary ('mobile first') styles.
+   These are for larger viewports,
+   overriding the primary ('mobile first') styles.
    ========================================================================== */
 @media only screen and (min-width: 55em) {
   /* Style adjustments for viewports that meet the condition */
@@ -312,6 +312,7 @@ header h3 {
     align-self: center;
   }
   .violet {
+    background-position-x: right 5rem;
     grid-area: a;
   }
   .gray-blue {

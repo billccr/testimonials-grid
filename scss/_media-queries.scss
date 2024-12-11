@@ -1,6 +1,7 @@
 /* ==========================================================================
    Media Queries for Responsive Design.
-   These override the primary ('mobile first') styles.
+   These are for larger viewports,
+   overriding the primary ('mobile first') styles.
    ========================================================================== */
 
 @use 'base/resets';
@@ -32,6 +33,7 @@
 	}
 
 	.violet {
+		background-position-x: right 5rem;
 		grid-area: a;
 	}
 	.gray-blue {

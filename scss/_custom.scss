@@ -15,7 +15,7 @@ main {
 
 .container {
 	display: grid;
-	gap: 1.7rem;
+	gap: 1.5rem;
 	width: 23.4rem;
 	margin: 0 auto;
 	padding-top: 4.4rem;
@@ -58,7 +58,6 @@ main {
 
 .violet {
 	background: no-repeat url("../img/bg-pattern-quotation.svg")  v.$violet 90% 0%;
-	background-position-x: right 5rem;
 }
 .gray-blue {
 	background-color: v.$dark-gray-blue;
